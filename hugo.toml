@@ -1,0 +1,112 @@
+baseURL = 'https://channelliving.com/'
+languageCode = 'id'
+title = 'Channel Living'
+theme = 'PaperMod'
+
+[params]
+  env = "production"
+  title = "Channel Living"
+  description = "Berbagi inspirasi gaya hidup, tips rumah tangga, dan konten menarik seputar kehidupan sehari-hari."
+  keywords = ["lifestyle", "home living", "tips rumah tangga", "gaya hidup", "inspirasi"]
+  author = "Channel Living"
+  images = ["assets/images/channel-living-avatar.svg"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+  [params.assets]
+    favicon = "/favicon/icon.svg"
+    favicon16x16 = "/favicon/icon.svg"
+    favicon32x32 = "/favicon/icon.svg"
+    apple_touch_icon = "/favicon/icon.svg"
+    safari_pinned_tab = "/favicon/icon.svg"
+
+  [params.label]
+    text = "Channel Living"
+    icon = "/favicon/icon.svg"
+    iconHeight = 35
+
+  [params.profileMode]
+    enabled = false
+    title = "Channel Living"
+    subtitle = "Berbagi inspirasi gaya hidup, tips rumah tangga, dan konten menarik seputar kehidupan sehari-hari."
+    imageUrl = "assets/images/channel-living-avatar.svg"
+    imageWidth = 120
+    imageHeight = 120
+    imageTitle = "Channel Living"
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "posts"
+    [[params.profileMode.buttons]]
+      name = "Tags"
+      url = "tags"
+
+  [params.homeInfoParams]
+    Title = "Selamat Datang di Channel Living! 👋"
+    Content = "Berbagi inspirasi gaya hidup, tips rumah tangga, dan konten menarik seputar kehidupan sehari-hari."
+
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://instagram.com/channelliving"
+
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://youtube.com/@channelliving"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/channelliving"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 50
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "github-dark"
